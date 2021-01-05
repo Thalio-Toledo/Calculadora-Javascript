@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="calculadora.css">
+    <script src="calculadora.js"></script>
+   
+</head>
+<body>
+    <div id="calculadora">
+
+        <div>
+
+        <div id="tela">
+
+        </div>
+        
+
+        <div class="botoes">
+           <div>
+            <button class="botaoDigito" value="1">1</button>
+            <button class="botaoDigito" value="2">2</button>
+            <button class="botaoDigito" value="3">3</button>
+            <button class="botaoAcao" value="c">C</button>
+           </div>
+           <div>
+            <button class="botaoDigito" value="4">4</button>
+            <button class="botaoDigito" value="5">5</button>
+            <button class="botaoDigito" value="6">6</button>
+            <button class="botaoAcao" value="*">*</button>
+           </div>
+           <div>
+            <button class="botaoDigito" value="7">7</button>
+            <button class="botaoDigito" value="8">8</button>
+            <button class="botaoDigito" value="9">9</button>
+            <button class="botaoAcao" value="-">-</button>
+           </div>
+           <div>
+            <button class="botaoDigito" value="9">0</button>
+            <button class="botaoAcao" value="+">+</button>
+            <button class="botaoAcao" value="=">=</button>
+            <button class="botaoAcao" value="/">/</button>
+           </div>
+
+
+        </div>
+
+    </div> 
+    <script>
+        var botaoDigito = document.querySelectorAll('.botaoDigito');
+        botaoDigito.forEach(bd => bd.addEventListener('click', botaoDigitoClick));
+        
+        var botaoAcao = document.querySelectorAll('.botaoAcao');
+        botaoAcao.forEach(ba => ba.addEventListener('click', botaoAcaoClick));
+        
+        
+
+    </script>
+    
+</body>
+</html>
